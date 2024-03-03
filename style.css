@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 50%;
+  background-color: #fff;
+  max-width: 700px;
+  margin: 2rem;
+  border-radius: 1rem;
+  color: hsl(24, 5%, 18%);
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.card-img-container {
+  width: 100%;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
+p,
+li {
+  font-family: Outfit;
+  line-height: 1.5rem;
+}
+
+.recipe-title,
+.section-heading {
+  font-family: "Young Serif";
+}
+
+.prep-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 1rem;
+}
+
+.prep-time-container {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+}
+
+ul,
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.section-heading {
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-left: 1.25rem;
+}
+
+hr {
+  color: hsla(12, 4%, 23%, 0.25);
+  height: 0.001rem;
+}
+
+table {
+  width: 100%;
+  padding: 1rem;
+  font-family: Outfit;
+  border-collapse: collapse;
+}
+
+td {
+  width: 50%;
+  line-height: 2rem;
+  padding: 0.5rem 2rem;
+}
+
+td:nth-child(even) {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+tr:not(:last-child) {
+  border-bottom: 0.001rem solid hsla(12, 4%, 23%, 0.25);
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 14px;
+  }
+  .card {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+  .card {
+    width: 100%;
+    margin: 0;
+  }
+  .card-img-container {
+    padding: 0;
+    margin-bottom: 2rem;
+    border-radius: 0;
+  }
+  .card-img {
+    border-radius: 0;
+  }
+}
